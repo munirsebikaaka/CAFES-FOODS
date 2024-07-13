@@ -4,40 +4,100 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CODESMANN'S CAFEY JAVAS</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header class="head-of-application">
       <div class="app-logo">
-        <ion-icon name="person-outline"></ion-icon>
+        <ion-icon class="logo" name="person-outline"></ion-icon>
         <h2 class="logo-discription">GUEST USER</h2>
       </div>
       <nav class="application-nav">
         <ul class="app-links-cell">
           <li class="application-link">
-            <ion-icon name="home-outline"></ion-icon>HOME
+            <ion-icon class="link-icon" name="home-outline"></ion-icon
+            ><a class="link" href="#">HOME</a>
           </li>
           <li class="application-link">
-            <ion-icon name="person-add-outline"></ion-icon>MY ACOUNT
+            <ion-icon class="link-icon" name="person-add-outline"></ion-icon
+            ><a class="link" href="#">MY ACOUNT</a>
           </li>
           <li class="application-link">
-            <ion-icon name="notifications-outline"></ion-icon>NOTIFICATIONS
+            <ion-icon class="link-icon" name="notifications-outline"></ion-icon
+            ><a class="link" href="#">NOTIFICATIONS</a>
           </li>
           <li class="application-link">
-            <ion-icon name="refresh-outline"></ion-icon>ORDER HISTORY
+            <ion-icon class="link-icon" name="refresh-outline"></ion-icon
+            ><a class="link" href="#">ORDER HISTORY</a>
           </li>
           <li class="application-link">
-            <ion-icon name="bag-check-outline"></ion-icon>FEATURED PRODUCTS
+            <ion-icon class="link-icon" name="bag-check-outline"></ion-icon
+            ><a class="link" href="#">FEATURED PRODUCTS</a>
           </li>
           <li class="application-link">
-            <ion-icon name="heart-outline"></ion-icon>FAVOURITES
+            <ion-icon class="link-icon" name="heart-outline"></ion-icon
+            ><a class="link" href="#">FAVOURITES</a>
           </li>
           <li class="application-link">
-            <ion-icon name="settings-outline"></ion-icon>SETTINGS
+            <ion-icon class="link-icon" name="settings-outline"></ion-icon
+            ><a class="link" href="#">SETTINGS</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main class="main-body-of-application"></main>
+    <main class="main-body-of-application">
+      <section class="hero-section">
+        <div class="hero-content-cell">
+          <h1 class="hero-discription">
+            WELCOME TO <b class="description-name">CJ's!!</b>
+          </h1>
+          <button class="btn hero-btn">
+            <ion-icon class="link-icon" name="bag-check-outline"></ion-icon
+            >START ORDER
+          </button>
+        </div>
+      </section>
+      <section class="about-us">
+        <h1 class="about-head">ORDER FIRST FROM YOUR FAVOURITES</h1>
+        <div class="register-cell">
+          <button class="btn geolocation-btn">
+            <ion-icon name="globe-outline"></ion-icon>view our cafeJavas
+            brunches
+          </button>
+          <div class="control-btn-cell">
+            <button class="btn login-btn">login</button>
+            <button class="btn register-btn">register</button>
+          </div>
+        </div>
+        <h4 class="about-semi-head">my recent orders</h4>
+        <p class="about-semi-description">
+          Login for an easy, one tap order again for your recent orders.
+        </p>
+        <div class="main-control-btns">
+          <button class="btn">
+            <ion-icon class="control-btn-icons" name="home-outline"></ion-icon>
+          </button>
+          <button class="btn">
+            <ion-icon
+              class="control-btn-icons"
+              name="restaurant-outline"
+            ></ion-icon>
+          </button>
+          <button class="btn">
+            <ion-icon
+              class="control-btn-icons"
+              name="ribbon-outline"
+            ></ion-icon>
+          </button>
+          <button class="btn">
+            <ion-icon
+              class="control-btn-icons"
+              name="ellipsis-horizontal-outline"
+            ></ion-icon>
+          </button>
+        </div>
+      </section>
+    </main>
     <footer class="last-part-of-application"></footer>
     <script
       type="module"

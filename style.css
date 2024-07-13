@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+/* COMBINED APPLICATION STYLES */
+:root {
+  --main-color: #000;
+  --semi-main-color: #3f3f3f;
+  --white-color: #ffffff;
+  --red-color: #ff0000;
+}
+.head-of-application,
+.app-links-cell,
+.application-link,
+.app-logo,
+.hero-content-cell {
+  display: flex;
+}
+.head-of-application,
+.application-link {
+  align-items: center;
+  align-items: center;
+}
+/* APPLICATION NAVIGATION STYLES */
+
+.application-link {
+  gap: 10px;
+}
+.head-of-application,
+.app-links-cell {
+  justify-content: space-around;
+}
+.app-links-cell {
+  gap: 20px;
+}
+.head-of-application {
+  padding: 8px;
+}
+.link-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.link {
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  font-size: 1rem;
+  color: var(--semi-main-color);
+}
+.app-logo {
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.logo {
+  width: 2.8rem;
+  height: 2.8rem;
+  border: 2px solid var(--main-color);
+  border-radius: 50%;
+  padding: 12px;
+}
+.logo-discription {
+  font-size: 1.1rem;
+}
+/*APPLICATION HERO SECTION STYLES */
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+}
+.hero-section {
+  position: relative;
+  height: 50vh;
+  background-image: url(bigBrakeFAST/breakFastCombo/platter-2009590_1280.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero-content-cell {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  flex-direction: column;
+  gap: 2rem;
+}
+.hero-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.4rem;
+  padding: 6px 12px;
+  color: var(--white-color);
+  background-color: var(--red-color);
+  border-radius: 11px;
+  font-weight: 600;
+}
+.hero-discription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
+  color: var(--white-color);
+}
+.description-name {
+  font-size: 5rem;
+}
+/*SECTION ABOUT US STYLES */
+.about-head {
+  text-align: center;
+}
+.register-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.about-semi-head {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+.about-semi-description {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.login-btn,
+.register-btn,
+.geolocation-btn {
+  font-size: 1.5rem;
+  padding: 6px;
+  background-color: #008d5e;
+  color: var(--white-color);
+  border-radius: 11px;
+}
+.control-btn-cell {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid red;
+}
