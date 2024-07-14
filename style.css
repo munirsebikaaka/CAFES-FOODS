@@ -40,6 +40,11 @@ body {
 }
 .head-of-application {
   padding: 8px;
+  background-color: var(--primary-color);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
 }
 .link-icon {
   width: 1.5rem;
@@ -74,8 +79,9 @@ body {
   border: none;
 }
 .hero-section {
+  margin-top: 100px;
   position: relative;
-  height: 50vh;
+  height: 60vh;
   background-image: url(bigBrakeFAST/breakFastCombo/platter-2009590_1280.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -163,6 +169,7 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 10px;
+  margin-bottom: 20px;
 }
 .control-btn-icons {
   width: 3rem;
@@ -182,4 +189,20 @@ body {
   background-color: var(--white-color);
   box-shadow: 0 5px 5px 10px #00000010;
   z-index: 100;
+}
+/* ORDERS OF THE APPLICATION  */
+.orders {
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin: 50px;
+}
+.big-img {
+  width: 100%;
+  height: auto;
+}
+.orders-head {
+  margin-top: 120px;
 }
