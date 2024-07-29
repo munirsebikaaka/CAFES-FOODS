@@ -45,45 +45,50 @@ menuBtn.addEventListener("click", function () {
   `;
 });
 
-// orderBtn.addEventListener("click", function () {
-//   heroSection.innerHTML = `
-//        <div class="orders-in">
-//           <div>
-//             <div class="big-on-breakfast">
-//               <img
-//                 class="big-img"
-//                 src="bigBrakeFAST/cappuccino-1869731_1280.jpg"
-//                 alt=""
-//               />
-//             </div>
-//             <div class="big-on-breakfast">
-//               <img
-//                 class="big-img"
-//                 src="bigBrakeFAST/cappuccino-1869731_1280.jpg"
-//                 alt=""
-//               />
-//             </div>
-//           </div>
-//           <div>
-//             <div class="big-on-breakfast">
-//               <img
-//                 class="big-img"
-//                 src="bigBrakeFAST/cappuccino-1869731_1280.jpg"
-//                 alt=""
-//               />
-//             </div>
-//             <div class="big-on-breakfast">
-//               <img
-//                 class="big-img"
-//                 src="bigBrakeFAST/cappuccino-1869731_1280.jpg"
-//                 alt=""
-//               />
-//             </div>
-//           </div>
-//         </div>
-
-//   `;
-// });
+orderBtn.addEventListener("click", function () {
+  heroSection.innerHTML = `
+  
+  <div class="orders-in">
+          <div class="inside-order">
+            <div class="big-on-breakfast">
+              <img
+                class="big-img"
+                src="bigBrakeFAST/breakFastCombo/combo8.jpg"
+                alt=""
+              />
+              <p class="order-name">namesssss</p>
+            </div>
+            <div class="big-on-breakfast">
+              <img
+                class="big-img"
+                src="bigBrakeFAST/breakFastCombo/combo6.jpg"
+                alt=""
+              />
+              <p class="order-name">namesssss</p>
+            </div>
+          </div>
+          <div class="inside-order">
+            <div class="big-on-breakfast">
+              <img
+                class="big-img"
+                src="bigBrakeFAST/breakFastCombo/combo5.jpg"
+                alt=""
+              />
+              <p class="order-name">namesssss</p>
+            </div>
+            <div class="big-on-breakfast">
+              <img
+                class="big-img"
+                src="bigBrakeFAST/cappuccino-1869731_1280.jpg"
+                alt=""
+              />
+              <p class="order-name">namesssss</p>
+            </div>
+          </div>
+        </div>
+  
+  `;
+});
 rewardsBtn.addEventListener("click", function () {
   heroSection.innerHTML = `
   

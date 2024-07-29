@@ -14,28 +14,28 @@ body {
   --red-color: #ff0000;
   --primary-color: #008d5e;
 }
-.head-of-application,
-.app-links-cell,
-.application-link,
-.app-logo,
+/* .head-of-application, */
+/* .app-links-cell, */
+/* .application-link, */
+/* .app-logo, */
 .hero-content-cell {
   display: flex;
 }
-.head-of-application,
-.application-link {
+/* .head-of-application, */
+/* .application-link {
   align-items: center;
-  align-items: center;
-}
+  align-items: center; */
+/* } */
 
 /* APPLICATION NAVIGATION STYLES */
 
-.application-link {
+/* .application-link {
   gap: 10px;
-}
-.head-of-application,
-.app-links-cell {
+} */
+/* .head-of-application, */
+/* .app-links-cell {
   justify-content: space-around;
-}
+} */
 .app-links-cell {
   gap: 20px;
 }
@@ -46,6 +46,7 @@ body {
   width: 100%;
   top: 0;
   z-index: 100;
+  flex-direction: column;
 }
 .link-icon {
   width: 1.5rem;
@@ -126,6 +127,7 @@ body {
   margin: 0 auto;
   margin-top: 20px;
   padding: 0 50px;
+  margin-bottom: 100px;
 }
 .about-head {
   text-align: center;
@@ -202,7 +204,7 @@ body {
   align-items: center;
   justify-content: center;
   margin-bottom: 200px;
-  margin: 0 auto;
+  margin: 110px auto;
   gap: 50px;
   /* margin-bottom: 100px; */
 }
