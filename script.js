@@ -1,14 +1,22 @@
 "use strict";
 
+const applicationForm = document.querySelector(".application-nav");
 const ordersSection = document.querySelector(".orders");
 const heroSection = document.querySelector(".hero");
+
+const sectionName = document.querySelector(".sec-name");
 
 const orderBtn = document.querySelector(".order-btn");
 const menuBtn = document.querySelector(".home-btn");
 const rewardsBtn = document.querySelector(".rewards-btn");
 const moreBtn = document.querySelector(".more-btn");
+const showFormBtn = document.querySelector(".show-form");
 
+showFormBtn.addEventListener("click", function () {
+  applicationForm.classList.remove("hidden");
+});
 menuBtn.addEventListener("click", function () {
+  sectionName.textContent = "HOME";
   heroSection.innerHTML = `
   
   <section class="hero">
@@ -46,6 +54,7 @@ menuBtn.addEventListener("click", function () {
 });
 
 orderBtn.addEventListener("click", function () {
+  sectionName.textContent = "ORDERS";
   heroSection.innerHTML = `
   
   <div class="orders-in">
@@ -90,6 +99,7 @@ orderBtn.addEventListener("click", function () {
   `;
 });
 rewardsBtn.addEventListener("click", function () {
+  sectionName.textContent = "REWARDS";
   heroSection.innerHTML = `
   
 
@@ -143,6 +153,7 @@ rewardsBtn.addEventListener("click", function () {
   `;
 });
 moreBtn.addEventListener("click", function () {
+  sectionName.textContent = "MORE";
   heroSection.innerHTML = `
      <ul>
         <li class="footer-links"><a href="#">E-GIFT CARD</a></li>
