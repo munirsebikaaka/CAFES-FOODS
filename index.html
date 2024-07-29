@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CODESMANN'S CAFEY JAVAS</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="quaries.css" />
   </head>
   <body>
     <header class="head-of-application">
@@ -45,27 +46,27 @@
         </ul>
       </nav>
       <div class="main-control-btns">
-        <button class="btn home-btn">
-          <ion-icon class="control-btn-icons" name="home-outline"></ion-icon
-          >btn1
+        <button class="btn controls home-btn">
+          <ion-icon class="control-btn-icons" name="home-outline"></ion-icon>
+          <p class="btn-content">home</p>
         </button>
-        <button class="btn order-btn">
+        <button class="btn controls order-btn">
           <ion-icon
             class="control-btn-icons"
             name="restaurant-outline"
-          ></ion-icon
-          >btn2
+          ></ion-icon>
+          <p class="btn-content">order</p>
         </button>
-        <button class="btn rewards-btn">
-          <ion-icon class="control-btn-icons" name="ribbon-outline"></ion-icon
-          >btn3
+        <button class="btn controls rewards-btn">
+          <ion-icon class="control-btn-icons" name="ribbon-outline"></ion-icon>
+          <p class="btn-content">rewards</p>
         </button>
-        <button class="btn more-btn">
+        <button class="btn controls more-btn">
           <ion-icon
             class="control-btn-icons"
             name="ellipsis-horizontal-outline"
-          ></ion-icon
-          >btn4
+          ></ion-icon>
+          <p class="btn-content">more</p>
         </button>
       </div>
     </header>
@@ -76,10 +77,12 @@
             <h1 class="hero-discription">
               WELCOME TO <b class="description-name">CJ's!!</b>
             </h1>
-            <button class="btn hero-btn">
-              <ion-icon class="link-icon" name="bag-check-outline"></ion-icon
-              >START ORDER
-            </button>
+            <div class="bt-cell">
+              <button class="btn hero-btn">
+                <ion-icon class="link-icon" name="bag-check-outline"></ion-icon
+                >START ORDER
+              </button>
+            </div>
           </div>
         </div>
 
@@ -103,35 +106,43 @@
       </section>
       <h1 class="orders-head">Welcome to CJ's!!</h1>
 
-      <section class="orders hidden">
-        <div>
-          <div class="big-on-breakfast">
-            <img
-              class="big-img"
-              src="bigBrakeFAST/cappuccino-1869731_1280.jpg"
-              alt=""
-            />
+      <section class="orders">
+        <div class="orders-in">
+          <div class="inside-order">
+            <div class="big-on-breakfast">
+              <img
+                class="big-img"
+                src="bigBrakeFAST/cappuccino-1869731_1280.jpg"
+                alt=""
+              />
+              <p class="order-name">namesssss</p>
+            </div>
+            <div class="big-on-breakfast">
+              <img
+                class="big-img"
+                src="bigBrakeFAST/cappuccino-1869731_1280.jpg"
+                alt=""
+              />
+              <p class="order-name">namesssss</p>
+            </div>
           </div>
-          <div class="big-on-breakfast">
-            <img
-              class="big-img"
-              src="bigBrakeFAST/cappuccino-1869731_1280.jpg"
-              alt=""
-            />
-          </div>
-          <div class="big-on-breakfast">
-            <img
-              class="big-img"
-              src="bigBrakeFAST/cappuccino-1869731_1280.jpg"
-              alt=""
-            />
-          </div>
-          <div class="big-on-breakfast">
-            <img
-              class="big-img"
-              src="bigBrakeFAST/cappuccino-1869731_1280.jpg"
-              alt=""
-            />
+          <div class="inside-order">
+            <div class="big-on-breakfast">
+              <img
+                class="big-img"
+                src="bigBrakeFAST/cappuccino-1869731_1280.jpg"
+                alt=""
+              />
+              <p class="order-name">namesssss</p>
+            </div>
+            <div class="big-on-breakfast">
+              <img
+                class="big-img"
+                src="bigBrakeFAST/cappuccino-1869731_1280.jpg"
+                alt=""
+              />
+              <p class="order-name">namesssss</p>
+            </div>
           </div>
         </div>
       </section>
@@ -183,7 +194,7 @@
         </div>
       </section>
     </main>
-    <footer class="last-part-of-application">
+    <footer class="last-part-of-application hidden">
       <ul>
         <li class="footer-links"><a href="#">E-GIFT CARD</a></li>
         <li class="footer-links"><a href="#">TRACK ORDER</a></li>

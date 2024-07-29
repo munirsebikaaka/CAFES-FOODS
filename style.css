@@ -73,6 +73,10 @@ body {
 .logo-discription {
   font-size: 1.1rem;
 }
+.btn-content {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
 /*APPLICATION HERO SECTION STYLES */
 .btn {
   display: inline-block;
@@ -82,8 +86,8 @@ body {
 .hero-section {
   margin-top: 100px;
   position: relative;
-  height: 60vh;
-  background-image: url(bigBrakeFAST/breakFastCombo/platter-2009590_1280.jpg);
+  height: 70vh;
+  background-image: url(bigBrakeFAST/breakFastCombo/combo9.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -120,7 +124,6 @@ body {
 .about-us {
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 100px;
   margin-top: 20px;
   padding: 0 50px;
 }
@@ -144,6 +147,7 @@ body {
 .about-semi-description {
   font-size: 0.9rem;
   font-weight: 400;
+  line-height: 1.9;
 }
 .login-btn,
 .register-btn,
@@ -192,20 +196,28 @@ body {
   z-index: 100;
 }
 /* ORDERS OF THE APPLICATION  */
-.orders {
-  width: 100%;
+.orders-in {
+  width: 95%;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 30px;
-  padding: 50px;
+  margin-bottom: 200px;
+  margin: 0 auto;
+  gap: 50px;
+  /* margin-bottom: 100px; */
 }
 .big-img {
   width: 100%;
   height: auto;
+  border-radius: 18px;
+  cursor: pointer;
 }
-.orders-head {
-  margin-top: 120px;
+.inside-order {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 50px;
 }
 .hidden {
   display: none;

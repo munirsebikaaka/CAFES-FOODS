@@ -1,0 +1,32 @@
+@media (max-width: 600px) {
+  .hero-section {
+    height: 45vh;
+  }
+
+  .hero-content-cell {
+    width: 100%;
+    top: 55%;
+  }
+  .about-head {
+    font-size: 0.9rem;
+  }
+  .geolocation-btn {
+    font-size: 1.1rem;
+  }
+  .login-btn,
+  .register-btn {
+    padding: 6px 36px;
+  }
+  .hero-btn {
+    margin: 0 20%;
+  }
+  .orders-in {
+    gap: 30px;
+  }
+  .inside-order {
+    gap: 30px;
+  }
+  .big-img {
+    height: auto;
+  }
+}

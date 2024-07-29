@@ -45,40 +45,45 @@ menuBtn.addEventListener("click", function () {
   `;
 });
 
-orderBtn.addEventListener("click", function () {
-  heroSection.innerHTML = `
-       <div>
-          <div class="big-on-breakfast">
-            <img
-              class="big-img"
-              src="bigBrakeFAST/cappuccino-1869731_1280.jpg"
-              alt=""
-            />
-          </div>
-          <div class="big-on-breakfast">
-            <img
-              class="big-img"
-              src="bigBrakeFAST/cappuccino-1869731_1280.jpg"
-              alt=""
-            />
-          </div>
-          <div class="big-on-breakfast">
-            <img
-              class="big-img"
-              src="bigBrakeFAST/cappuccino-1869731_1280.jpg"
-              alt=""
-            />
-          </div>
-          <div class="big-on-breakfast">
-            <img
-              class="big-img"
-              src="bigBrakeFAST/cappuccino-1869731_1280.jpg"
-              alt=""
-            />
-          </div>
-        </div>
-  `;
-});
+// orderBtn.addEventListener("click", function () {
+//   heroSection.innerHTML = `
+//        <div class="orders-in">
+//           <div>
+//             <div class="big-on-breakfast">
+//               <img
+//                 class="big-img"
+//                 src="bigBrakeFAST/cappuccino-1869731_1280.jpg"
+//                 alt=""
+//               />
+//             </div>
+//             <div class="big-on-breakfast">
+//               <img
+//                 class="big-img"
+//                 src="bigBrakeFAST/cappuccino-1869731_1280.jpg"
+//                 alt=""
+//               />
+//             </div>
+//           </div>
+//           <div>
+//             <div class="big-on-breakfast">
+//               <img
+//                 class="big-img"
+//                 src="bigBrakeFAST/cappuccino-1869731_1280.jpg"
+//                 alt=""
+//               />
+//             </div>
+//             <div class="big-on-breakfast">
+//               <img
+//                 class="big-img"
+//                 src="bigBrakeFAST/cappuccino-1869731_1280.jpg"
+//                 alt=""
+//               />
+//             </div>
+//           </div>
+//         </div>
+
+//   `;
+// });
 rewardsBtn.addEventListener("click", function () {
   heroSection.innerHTML = `
   
