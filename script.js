@@ -13,7 +13,7 @@ const moreBtn = document.querySelector(".more-btn");
 const showFormBtn = document.querySelector(".show-form");
 
 showFormBtn.addEventListener("click", function () {
-  applicationForm.classList.remove("hidden");
+  applicationForm.classList.remove("hidden2");
 });
 menuBtn.addEventListener("click", function () {
   sectionName.textContent = "HOME";

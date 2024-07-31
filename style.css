@@ -82,8 +82,11 @@ body {
   top: 100%;
   left: 0%;
   background-color: var(--primary-color);
-
+  transition: transform 1s;
   padding-left: 40px;
+}
+.hidden2 {
+  transform: translateX(-18rem);
 }
 .application-link {
   display: flex;
