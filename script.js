@@ -11,6 +11,7 @@ const menuBtn = document.querySelector(".home-btn");
 const rewardsBtn = document.querySelector(".rewards-btn");
 const moreBtn = document.querySelector(".more-btn");
 const showFormBtn = document.querySelector(".show-form");
+const btnCloseForm = document.querySelector(".close-form");
 
 import {
   showRewardsCell,
@@ -18,9 +19,11 @@ import {
   showMenu,
   showMore,
   showForm,
+  closeForm,
 } from "./mainBody.js";
 showRewardsCell(rewardsBtn, sectionName, heroSection);
 showOrderCell(orderBtn, sectionName, heroSection);
 showMenu(menuBtn, sectionName, heroSection);
 showMore(moreBtn, sectionName, heroSection);
 showForm(showFormBtn, applicationForm);
+closeForm(applicationForm, btnCloseForm);

@@ -174,3 +174,6 @@ export const showForm = function (showBtn, appForm) {
     appForm.classList.remove("hidden2");
   });
 };
+export const closeForm = function (appForm, close) {
+  close.addEventListener("click", () => appForm.classList.add("hidden2"));
+};
