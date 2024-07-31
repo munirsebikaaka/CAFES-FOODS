@@ -102,53 +102,60 @@ rewardsBtn.addEventListener("click", function () {
   sectionName.textContent = "REWARDS";
   heroSection.innerHTML = `
   
-
-<div class="about-rewards-cell">
-          <div class="about-reward">
-            <p class="reward-head">Welcome to <span>rewards</span></p>
-            <p class="reward-dis">
-              introducing rewards! our way to say thank you for using our app
-            </p>
-          </div>
-          <div class="reward">
-            <p class="point">points earned</p>
-            <p class="amount">00/10,00,000</p>
-            <p class="range"></p>
-          </div>
-        </div>
-        <div class="rewards-movement">
-          <h4 class="move-head">how it works</h4>
-          <div class="movement-cell">
-            <h4 class="move-name">earn points</h4>
-            <p class="move-dis">you can earn points on every order</p>
-          </div>
-          <div class="movement-cell">
-            <h4 class="move-name">validity of points</h4>
-            <p class="move-dis">
-              points credited has an expiry of 1 year from the date that is
-              creditted
-            </p>
-          </div>
-          <div class="movement-cell">
-            <h4 class="move-name">points transfer</h4>
-            <p class="move-dis">
-              earned rewards points can not be trnsfered to any third party.
-            </p>
-          </div>
-          <div class="movement-cell">
-            <h4 class="move-name">redeem points</h4>
-            <p class="move-dis">
-              our CART before checkout, you can enter the point you want to
-              redeem.
-            </p>
-          </div>
-          <div class="movement-cell">
-            <h4 class="move-name">credits on your phone number</h4>
-            <p class="move-dis">points credited basis the phone number.</p>
-          </div>
-        </div>
-
   
+  <div class="rewards">
+          <div class="about-rewards-cell">
+            <div class="about-reward">
+              <p class="reward-head">
+                Welcome to <span class="reward-head-m">Rewards</span>
+              </p>
+              <p class="reward-dis">
+                Introducing Rewards! Our way to say Thank you for using our app.
+              </p>
+            </div>
+            <div class="reward">
+              <p>ionicons</p>
+              <div>
+                <p class="point">Points Earned</p>
+                <p class="amount">00/10,00,000</p>
+                <p class="range">input ranges of rewards</p>
+              </div>
+            </div>
+          </div>
+          <div class="rewards-movement">
+            <h4 class="move-head">how it works</h4>
+            <div class="movements-cell">
+              <div class="movement-cell">
+                <h4 class="move-name">Earn Points</h4>
+                <p class="move-dis">You can Earn Points on every order</p>
+              </div>
+              <div class="movement-cell">
+                <h4 class="move-name">Validity of Points</h4>
+                <p class="move-dis">
+                  Points credited has an expiry of 1 year from the date that is
+                  creditted
+                </p>
+              </div>
+              <div class="movement-cell">
+                <h4 class="move-name">Points Transfer</h4>
+                <p class="move-dis">
+                  Earned rewards points can not be trnsfered to any third party.
+                </p>
+              </div>
+              <div class="movement-cell">
+                <h4 class="move-name">Redeem Roints</h4>
+                <p class="move-dis">
+                  Our CART before Checkout, You can enter the point you want to
+                  redeem.
+                </p>
+              </div>
+              <div class="movement-cell">
+                <h4 class="move-name">Credits on your Phone Number</h4>
+                <p class="move-dis">Points credited basis the phone number.</p>
+              </div>
+            </div>
+          </div>
+        </div>
   
   `;
 });
