@@ -31,16 +31,20 @@ closeForm(applicationForm, btnCloseForm);
 navigator.geolocation.getCurrentPosition(
   function (position) {
     const { latitude: lat, longitude: lng } = position.coords;
-    const cordinates = `   https://www.google.com/maps/@${lat},${lng},10z?entry=ttu   `;
-    console.log(cordinates);
+    const coord = [lat, lng];
+    console.log(`https://www.google.com/maps/@${lat},${lng}`);
 
-    const map = L.map("map").setView([lat, lng], 13);
+    const map = L.map("map").setView([51.505, -0.09], 13);
+
     L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
       attribution:
         '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
     }).addTo(map);
 
-    L.marker([lat, lng]).addTo(map).bindPopup("codesmann").openPopup();
+    L.marker([51.5, -0.09])
+      .addTo(map)
+      .bindPopup("A pretty CSS popup.<br> Easily customizable.")
+      .openPopup();
   },
-  (err) => alert(err)
+  () => alert("error")
 );

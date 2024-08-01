@@ -13,6 +13,7 @@
       crossorigin=""
     />
     <script
+      defer
       src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
       integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
       crossorigin=""
@@ -226,7 +227,47 @@
         </div>
       </section>
 
-      <div class="map"></div>
+      <section class="login-register">
+        <div class="resgister">
+          <input type="text" class="regsiter-input" placeholder="first name" />
+          <input type="text" class="regsiter-input" placeholder="last name" />
+          <input type="date" class="regsiter-input" />
+          <input type="email" class="regsiter-input" placeholder="email" />
+          <input type="text" class="regsiter-input" placeholder="password" />
+          <input
+            type="text"
+            class="regsiter-input"
+            placeholder="comfirm password"
+          />
+          <div class="comfirm-cell">
+            <p class="comfirm-text">
+              <input type="checkbox" /> i agree to the
+              <b class="terms-conditions">terms and conditions</b> and the
+              <b class="terms-conditions">privacy policy</b>
+            </p>
+            <button class="btn comfirm-btn">continue</button>
+            <p class="old-acount">
+              already has an acount <button class="btn sign-in">sign in</button>
+            </p>
+          </div>
+        </div>
+        <div class="login">
+          <p class="login-description">
+            commited to great food, great coffee, great service and an awesome
+            experiance that will make you long more! Welcome aboard.
+          </p>
+          <input type="email" class="login-input" placeholder="email" />
+          <input type="text" class="login-input" placeholder="password" />
+
+          <button class="btn">forgot password?</button>
+          <button class="btn">login</button>
+          <div>
+            <p>icon</p>
+            <p>icon</p>
+          </div>
+          <p class="sign-up">dont have an acount? <button>sign up</button></p>
+        </div>
+      </section>
     </main>
     <footer class="last-part-of-application hidden">
       <ul>
@@ -240,6 +281,9 @@
         <li class="footer-links"><a href="#"> CONTACT SUPPORT</a></li>
       </ul>
     </footer>
+
+    <div id="map"></div>
+
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
