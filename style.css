@@ -233,7 +233,11 @@ body {
   z-index: 100;
 }
 /* ORDERS OF THE APPLICATION  */
-.orders-in {
+.orders-in,
+.main-big-cell-1,
+.main-big-cell-2,
+.main-big-cell-3,
+.main-big-cell-4 {
   width: 95%;
   display: flex;
   align-items: center;
@@ -241,7 +245,11 @@ body {
   margin-bottom: 200px;
   margin: 110px auto;
   gap: 50px;
-  /* margin-bottom: 100px; */
+}
+.main-big-cell-1,
+.main-big-cell-4,
+.main-big-cell-2 {
+  align-items: start;
 }
 .big-img {
   width: 100%;
@@ -344,4 +352,27 @@ body {
 }
 .move-dis {
   font-size: 1.2rem;
+}
+/* APPLICATION footer */
+.footer-links-cell {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 5px 20px;
+  list-style: none;
+}
+.footer-links {
+  border-bottom: 1px solid #3333332a;
+  padding: 10px 0;
+}
+.footer-link {
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  color: var(--main-color);
+  font-family: sans-serif;
+  font-weight: 600;
 }

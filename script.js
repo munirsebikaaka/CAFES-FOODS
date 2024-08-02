@@ -1,9 +1,7 @@
 "use strict";
 
 const applicationForm = document.querySelector(".application-nav");
-const ordersSection = document.querySelector(".orders");
 const heroSection = document.querySelector(".hero");
-
 const sectionName = document.querySelector(".sec-name");
 
 const orderBtn = document.querySelector(".order-btn");
@@ -13,6 +11,7 @@ const moreBtn = document.querySelector(".more-btn");
 const showFormBtn = document.querySelector(".show-form");
 const btnCloseForm = document.querySelector(".close-form");
 
+// CODE FOR THE MAIN BODY OF THE APPLICATION FROM MAINBODY.JS
 import {
   showRewardsCell,
   showOrderCell,

@@ -154,17 +154,31 @@ export const showMore = function (btnMore, secNa, herSec) {
   btnMore.addEventListener("click", function () {
     secNa.textContent = "MORE";
     herSec.innerHTML = `
-           <ul>
-              <li class="footer-links"><a href="#">E-GIFT CARD</a></li>
-              <li class="footer-links"><a href="#">TRACK ORDER</a></li>
-              <li class="footer-links"><a href="#">DEALS</a></li>
-              <li class="footer-links"><a href="#">TERMS AND CONDITIONS</a></li>
-              <li class="footer-links"><a href="#">PRIVACY POLICY </a></li>
-              <li class="footer-links"><a href="#"> ABOUT US</a></li>
-              <li class="footer-links"><a href="#"> GALLARY</a></li>
-              <li class="footer-links"><a href="#"> CONTACT SUPPORT</a></li>
-            </ul>
-        
+           
+        <ul class="footer-links-cell">
+        <li class="footer-links">
+          <a href="#" class="footer-link">E-GIFT CARD</a>
+        </li>
+        <li class="footer-links">
+          <a href="#" class="footer-link">TRACK ORDER</a>
+        </li>
+        <li class="footer-links"><a href="#" class="footer-link">DEALS</a></li>
+        <li class="footer-links">
+          <a href="#" class="footer-link">TERMS & CONDITIONS</a>
+        </li>
+        <li class="footer-links">
+          <a href="#" class="footer-link">PRIVACY POLICY </a>
+        </li>
+        <li class="footer-links">
+          <a href="#" class="footer-link"> ABOUT US</a>
+        </li>
+        <li class="footer-links">
+          <a href="#" class="footer-link"> GALLARY</a>
+        </li>
+        <li class="footer-links">
+          <a href="#" class="footer-link"> CONTACT SUPPORT</a>
+        </li>
+      </ul>
         `;
   });
 };
@@ -174,6 +188,7 @@ export const showForm = function (showBtn, appForm) {
     appForm.classList.remove("hidden2");
   });
 };
+
 export const closeForm = function (appForm, close) {
   close.addEventListener("click", () => appForm.classList.add("hidden2"));
 };
