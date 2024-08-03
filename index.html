@@ -133,17 +133,17 @@
       <section class="orders hidden">
         <div class="orders-in">
           <div class="inside-order">
-            <div class="big-on-breakfast">
+            <div id="breakfastID" class="big-on-breakfast">
               <img
-                class="big-img"
+                class="big-img breakfast"
                 src="bigBrakeFAST/breakFastCombo/combo8.jpg"
                 alt=""
               />
-              <p class="order-name">namesssss</p>
+              <p class="order-name">BREAKFIST</p>
             </div>
             <div class="big-on-breakfast">
               <img
-                class="big-img"
+                class="big-img breakfast2"
                 src="bigBrakeFAST/breakFastCombo/combo6.jpg"
                 alt=""
               />
@@ -153,7 +153,7 @@
           <div class="inside-order">
             <div class="big-on-breakfast">
               <img
-                class="big-img"
+                class="big-img breakfast3"
                 src="bigBrakeFAST/breakFastCombo/combo5.jpg"
                 alt=""
               />
@@ -161,7 +161,7 @@
             </div>
             <div class="big-on-breakfast">
               <img
-                class="big-img"
+                class="big-img breakfast4"
                 src="bigBrakeFAST/cappuccino-1869731_1280.jpg"
                 alt=""
               />
@@ -228,47 +228,68 @@
       </section>
 
       <section class="login-register">
-        <div class="resgister">
+        <div class="resgister hidden">
+          <!-- <div>
+            <button class="btn close-register">
+              <ion-icon
+                class="form-icon"
+                name="chevron-back-outline"
+              ></ion-icon>
+            </button>
+            <p class="sec-dis">REGISTER</p>
+          </div> -->
+
           <input
             type="text"
             class="regsiter-input first-name"
-            placeholder="first name"
+            placeholder="FIRST NAME"
           />
           <input
             type="text"
             class="regsiter-input last-name"
-            placeholder="last name"
+            placeholder="LAST NAME"
           />
           <input type="date" class="regsiter-input dates" />
           <input
             type="email"
             class="regsiter-input emails"
-            placeholder="email"
+            placeholder="EMAIL"
           />
           <input
             type="text"
             class="regsiter-input password"
-            placeholder="password"
+            placeholder="PASSWORD"
           />
           <input
             type="text"
             class="regsiter-input comfirm"
-            placeholder="comfirm password"
+            placeholder="COMFIRM PASSWORD"
           />
           <p class="welcome"></p>
+
           <div class="comfirm-cell">
             <p class="comfirm-text">
-              <input type="checkbox" /> i agree to the
+              <input type="checkbox" /> I agree to the
               <b class="terms-conditions">terms and conditions</b> and the
               <b class="terms-conditions">privacy policy</b>
             </p>
             <button class="btn comfirm-btn">continue</button>
             <p class="old-acount">
-              already has an acount <button class="btn sign-in">sign in</button>
+              Already has an acount?
+              <button class="btn sign-in">sign in</button>
             </p>
           </div>
         </div>
-        <div class="login">
+        <div class="login hidden">
+          <!-- <div>
+            <button class="btn close-login">
+              <ion-icon
+                class="form-icon"
+                name="chevron-back-outline"
+              ></ion-icon>
+            </button>
+            <p class="sec-dis">LOGIN</p>
+          </div> -->
           <p class="login-description">
             commited to great food, great coffee, great service and an awesome
             experiance that will make you long more! Welcome aboard.
@@ -290,162 +311,418 @@
             <p>icon</p>
             <p>icon</p>
           </div>
-          <p class="sign-up">dont have an acount? <button>sign up</button></p>
+          <p class="sign-up">
+            Don't have an acount?
+            <button class="btn login-in-new">sign up</button>
+          </p>
         </div>
       </section>
-      <button class="btn com">check</button>
 
-      <section class="big-on-breakfast-cell hidden">
-        <div class="main-big-cell">
-          <div class="main-big-cell-1">
-            <div class="inside-order">
-              <div class="big-on-breakfast">
-                <img
-                  class="big-img"
-                  src="bigBrakeFAST/breakFastCombo/combo8.jpg"
-                  alt=""
-                />
-                <p class="order-name">namesssss</p>
-              </div>
-              <div class="big-on-breakfast">
-                <img
-                  class="big-img"
-                  src="bigBrakeFAST/breakFastCombo/combo8.jpg"
-                  alt=""
-                />
-                <p class="order-name">namesssss</p>
+      <section class="inside-orders-cell">
+        <div class="big-on-breakfasts hidden">
+          <div>
+            <div class="big-img-cell">
+              <img
+                src="bigBrakeFAST/breakFastCombo/combo2.jpg"
+                alt=""
+                class="big-img"
+              />
+              <p class="img-name">Cassava salads</p>
+              <div class="prices">
+                <p class="price">UGX 25,000</p>
+                <button class="btn order">order</button>
               </div>
             </div>
-            <div class="inside-order">
-              <div class="big-on-breakfast">
-                <img
-                  class="big-img"
-                  src="bigBrakeFAST/breakFastCombo/combo6.jpg"
-                  alt=""
-                />
-                <p class="order-name">namesssss</p>
-              </div>
-              <div class="big-on-breakfast">
-                <img
-                  class="big-img"
-                  src="bigBrakeFAST/breakFastCombo/combo8.jpg"
-                  alt=""
-                />
-                <p class="order-name">namesssss</p>
+            <div class="big-img-cell">
+              <img
+                src="bigBrakeFAST/breakFastCombo/combo11.jpg"
+                alt=""
+                class="big-img"
+              />
+              <p class="img-name">red papper & eggs</p>
+              <div class="prices">
+                <p class="price">UGX 30,000</p>
+                <button class="order">order</button>
               </div>
             </div>
-          </div>
-          <div class="main-big-cell-2">
-            <div class="inside-order">
-              <div class="big-on-breakfast">
-                <img
-                  class="big-img"
-                  src="bigBrakeFAST/breakFastCombo/combo8.jpg"
-                  alt=""
-                />
-                <p class="order-name">namesssss</p>
-              </div>
-              <div class="big-on-breakfast">
-                <img
-                  class="big-img"
-                  src="bigBrakeFAST/breakFastCombo/combo8.jpg"
-                  alt=""
-                />
-                <p class="order-name">namesssss</p>
+            <div class="big-img-cell">
+              <img
+                src="bigBrakeFAST/breakFastCombo/combo4.jpg"
+                alt=""
+                class="big-img"
+              />
+              <p class="img-name">dry irish</p>
+              <div class="prices">
+                <p class="price">UGX 15,000</p>
+                <button class="order">order</button>
               </div>
             </div>
-            <div class="inside-order">
-              <div class="big-on-breakfast">
-                <img
-                  class="big-img"
-                  src="bigBrakeFAST/breakFastCombo/combo6.jpg"
-                  alt=""
-                />
-                <p class="order-name">namesssss</p>
-              </div>
-              <div class="big-on-breakfast">
-                <img
-                  class="big-img"
-                  src="bigBrakeFAST/breakFastCombo/combo6.jpg"
-                  alt=""
-                />
-                <p class="order-name">namesssss</p>
+            <div class="big-img-cell">
+              <img
+                src="bigBrakeFAST/breakFastCombo/combo6.jpg"
+                alt=""
+                class="big-img"
+              />
+              <p class="img-name">HOT DOG WITH GREENS</p>
+              <div class="prices">
+                <p class="price">UGX 32,000</p>
+                <button class="order">order</button>
               </div>
             </div>
           </div>
-          <div class="main-big-cell-3">
-            <div class="inside-order">
-              <div class="big-on-breakfast">
-                <img
-                  class="big-img"
-                  src="bigBrakeFAST/breakFastCombo/combo8.jpg"
-                  alt=""
-                />
-                <p class="order-name">namesssss</p>
-              </div>
-              <div class="big-on-breakfast">
-                <img
-                  class="big-img"
-                  src="bigBrakeFAST/breakFastCombo/combo8.jpg"
-                  alt=""
-                />
-                <p class="order-name">namesssss</p>
+          <div>
+            <div class="big-img-cell">
+              <img
+                src="bigBrakeFAST/breakFastCombo/combo11.jpg"
+                alt=""
+                class="big-img"
+              />
+              <p class="img-name">RED PAPER AND EGGS</p>
+              <div class="prices">
+                <p class="price">25,000</p>
+                <button class="order">order</button>
               </div>
             </div>
-            <div class="inside-order">
-              <div class="big-on-breakfast">
-                <img
-                  class="big-img"
-                  src="bigBrakeFAST/breakFastCombo/combo6.jpg"
-                  alt=""
-                />
-                <p class="order-name">namesssss</p>
+            <div class="big-img-cell">
+              <img
+                src="bigBrakeFAST/breakFastCombo/combo8.jpg"
+                alt=""
+                class="big-img"
+              />
+              <p class="img-name">ROAST MEAT WITH EGGS</p>
+              <div class="prices">
+                <p class="price">50,000</p>
+                <button class="order">order</button>
               </div>
-              <div class="big-on-breakfast">
-                <img
-                  class="big-img"
-                  src="bigBrakeFAST/breakFastCombo/combo8.jpg"
-                  alt=""
-                />
-                <p class="order-name">namesssss</p>
+            </div>
+            <div class="big-img-cell">
+              <img
+                src="bigBrakeFAST/breakFastCombo/combo13.jpg"
+                alt=""
+                class="big-img"
+              />
+              <p class="img-name">GREENS AND SALADS</p>
+              <div class="prices">
+                <p class="price">UGX 28,000</p>
+                <button class="order">order</button>
+              </div>
+            </div>
+            <div class="big-img-cell">
+              <img
+                src="bigBrakeFAST/breakFastCombo/combo10.jpg"
+                alt=""
+                class="big-img"
+              />
+              <p class="img-name">SUPERGATES TOMATOS</p>
+              <div class="prices">
+                <p class="price">UGX 18,000</p>
+                <button class="order">order</button>
               </div>
             </div>
           </div>
-          <div class="main-big-cell-4">
-            <div class="inside-order">
-              <div class="big-on-breakfast">
-                <img
-                  class="big-img"
-                  src="bigBrakeFAST/breakFastCombo/combo8.jpg"
-                  alt=""
-                />
-                <p class="order-name">namesssss</p>
-              </div>
-              <div class="big-on-breakfast">
-                <img
-                  class="big-img"
-                  src="bigBrakeFAST/breakFastCombo/combo8.jpg"
-                  alt=""
-                />
-                <p class="order-name">namesssss</p>
+        </div>
+        <div class="generous-big-meal hidden">
+          <div>
+            <div class="big-img-cell">
+              <img
+                src="bigBrakeFAST/breakFastCombo/combo9.jpg"
+                alt=""
+                class="big-img"
+              />
+              <p class="img-name">name</p>
+              <div class="prices">
+                <p class="price">price</p>
+                <button class="order">order</button>
               </div>
             </div>
-            <div class="inside-order">
-              <div class="big-on-breakfast">
-                <img
-                  class="big-img"
-                  src="bigBrakeFAST/breakFastCombo/combo6.jpg"
-                  alt=""
-                />
-                <p class="order-name">namesssss</p>
+            <div class="big-img-cell">
+              <img
+                src="bigBrakeFAST/breakFastCombo/combo2.jpg"
+                alt=""
+                class="big-img"
+              />
+              <p class="img-name">name</p>
+              <div class="prices">
+                <p class="price">price</p>
+                <button class="order">order</button>
               </div>
-              <div class="big-on-breakfast">
-                <img
-                  class="big-img"
-                  src="bigBrakeFAST/breakFastCombo/combo8.jpg"
-                  alt=""
-                />
-                <p class="order-name">namesssss</p>
+            </div>
+            <div class="big-img-cell">
+              <img
+                src="bigBrakeFAST/breakFastCombo/combo2.jpg"
+                alt=""
+                class="big-img"
+              />
+              <p class="img-name">name</p>
+              <div class="prices">
+                <p class="price">price</p>
+                <button class="order">order</button>
+              </div>
+            </div>
+            <div class="big-img-cell">
+              <img
+                src="bigBrakeFAST/breakFastCombo/combo2.jpg"
+                alt=""
+                class="big-img"
+              />
+              <p class="img-name">name</p>
+              <div class="prices">
+                <p class="price">price</p>
+                <button class="order">order</button>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="big-img-cell">
+              <img
+                src="bigBrakeFAST/breakFastCombo/combo2.jpg"
+                alt=""
+                class="big-img"
+              />
+              <p class="img-name">name</p>
+              <div class="prices">
+                <p class="price">price</p>
+                <button class="order">order</button>
+              </div>
+            </div>
+            <div class="big-img-cell">
+              <img
+                src="bigBrakeFAST/breakFastCombo/combo2.jpg"
+                alt=""
+                class="big-img"
+              />
+              <p class="img-name">name</p>
+              <div class="prices">
+                <p class="price">price</p>
+                <button class="order">order</button>
+              </div>
+            </div>
+            <div class="big-img-cell">
+              <img
+                src="bigBrakeFAST/breakFastCombo/combo2.jpg"
+                alt=""
+                class="big-img"
+              />
+              <p class="img-name">name</p>
+              <div class="prices">
+                <p class="price">price</p>
+                <button class="order">order</button>
+              </div>
+            </div>
+            <div class="big-img-cell">
+              <img
+                src="bigBrakeFAST/breakFastCombo/combo2.jpg"
+                alt=""
+                class="big-img"
+              />
+              <p class="img-name">name</p>
+              <div class="prices">
+                <p class="price">price</p>
+                <button class="order">order</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pefected-drinks hidden">
+          <div>
+            <div class="big-img-cell">
+              <img
+                src="bigBrakeFAST/breakFastCombo/combo2.jpg"
+                alt=""
+                class="big-img"
+              />
+              <p class="img-name">name</p>
+              <div class="prices">
+                <p class="price">price</p>
+                <button class="order">order</button>
+              </div>
+            </div>
+            <div class="big-img-cell">
+              <img
+                src="bigBrakeFAST/breakFastCombo/combo2.jpg"
+                alt=""
+                class="big-img"
+              />
+              <p class="img-name">name</p>
+              <div class="prices">
+                <p class="price">price</p>
+                <button class="order">order</button>
+              </div>
+            </div>
+            <div class="big-img-cell">
+              <img
+                src="bigBrakeFAST/breakFastCombo/combo2.jpg"
+                alt=""
+                class="big-img"
+              />
+              <p class="img-name">name</p>
+              <div class="prices">
+                <p class="price">price</p>
+                <button class="order">order</button>
+              </div>
+            </div>
+            <div class="big-img-cell">
+              <img
+                src="bigBrakeFAST/breakFastCombo/combo2.jpg"
+                alt=""
+                class="big-img"
+              />
+              <p class="img-name">name</p>
+              <div class="prices">
+                <p class="price">price</p>
+                <button class="order">order</button>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="big-img-cell">
+              <img
+                src="bigBrakeFAST/breakFastCombo/combo2.jpg"
+                alt=""
+                class="big-img"
+              />
+              <p class="img-name">name</p>
+              <div class="prices">
+                <p class="price">price</p>
+                <button class="order">order</button>
+              </div>
+            </div>
+            <div class="big-img-cell">
+              <img
+                src="bigBrakeFAST/breakFastCombo/combo2.jpg"
+                alt=""
+                class="big-img"
+              />
+              <p class="img-name">name</p>
+              <div class="prices">
+                <p class="price">price</p>
+                <button class="order">order</button>
+              </div>
+            </div>
+            <div class="big-img-cell">
+              <img
+                src="bigBrakeFAST/breakFastCombo/combo2.jpg"
+                alt=""
+                class="big-img"
+              />
+              <p class="img-name">name</p>
+              <div class="prices">
+                <p class="price">price</p>
+                <button class="order">order</button>
+              </div>
+            </div>
+            <div class="big-img-cell">
+              <img
+                src="bigBrakeFAST/breakFastCombo/combo2.jpg"
+                alt=""
+                class="big-img"
+              />
+              <p class="img-name">name</p>
+              <div class="prices">
+                <p class="price">price</p>
+                <button class="order">order</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dedicant-deserts hidden">
+          <div>
+            <div class="big-img-cell">
+              <img
+                src="bigBrakeFAST/omerates/pizza-3007395_1280.jpg"
+                alt=""
+                class="big-img"
+              />
+              <p class="img-name">slicced pizza</p>
+              <div class="prices">
+                <p class="price">UGX 16000</p>
+                <button class="order">order</button>
+              </div>
+            </div>
+            <div class="big-img-cell">
+              <img
+                src="bigBrakeFAST/wornderful waffles/meal-7707134_1280.jpg"
+                alt=""
+                class="big-img"
+              />
+              <p class="img-name">bread seeds</p>
+              <div class="prices">
+                <p class="price">UGX 22,000</p>
+                <button class="order">order</button>
+              </div>
+            </div>
+            <div class="big-img-cell">
+              <img
+                src="bigBrakeFAST/wornderful waffles/waffle0.jpg"
+                alt=""
+                class="big-img"
+              />
+              <p class="img-name">wonder waffles</p>
+              <div class="prices">
+                <p class="price">UGX 40,000</p>
+                <button class="order">order</button>
+              </div>
+            </div>
+            <div class="big-img-cell">
+              <img
+                src="bigBrakeFAST/friut morning/strawberries-3431122_1280.jpg"
+                alt=""
+                class="big-img"
+              />
+              <p class="img-name">RED strawberries</p>
+              <div class="prices">
+                <p class="price">UGX 10,000</p>
+                <button class="order">order</button>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="big-img-cell">
+              <img
+                src="bigBrakeFAST/friut morning/berries-5688281_1280 (1).jpg"
+                alt=""
+                class="big-img"
+              />
+              <p class="img-name">BLUE BERRIES</p>
+              <div class="prices">
+                <p class="price">UGX 17,000</p>
+                <button class="order">order</button>
+              </div>
+            </div>
+            <div class="big-img-cell">
+              <img
+                src="bigBrakeFAST/pastries/asparagus-2169305_1280.jpg"
+                alt=""
+                class="big-img"
+              />
+              <p class="img-name">NYAMA KYOMA</p>
+              <div class="prices">
+                <p class="price">UGX 45,000</p>
+                <button class="order">order</button>
+              </div>
+            </div>
+            <div class="big-img-cell">
+              <img
+                src="bigBrakeFAST/pastries/shish-kebab-417994_1280.jpg"
+                alt=""
+                class="big-img"
+              />
+              <p class="img-name">RAMONADE FOOD</p>
+              <div class="prices">
+                <p class="price">38,000</p>
+                <button class="order">order</button>
+              </div>
+            </div>
+            <div class="big-img-cell">
+              <img
+                src="bigBrakeFAST/pastries/pasta-1181189_1280.jpg"
+                alt=""
+                class="big-img"
+              />
+              <p class="img-name">BOILED EGGS</p>
+              <div class="prices">
+                <p class="price">UGX 23,000</p>
+                <button class="order">order</button>
               </div>
             </div>
           </div>

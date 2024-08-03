@@ -8,7 +8,14 @@ const welcomeMsg = document.querySelector(".welcome");
 const comfirmBTN = document.querySelector(".comfirm-btn");
 const accEmail = document.querySelector(".login-email");
 const accPassword = document.querySelector(".login-password");
+const regsiterCell = document.querySelector(".resgister");
+const loginCell = document.querySelector(".login");
+
 const btnLoginOldAcc = document.querySelector(".login-old-acc");
+const loginBtn = document.querySelector(".login-btn");
+const regsiterBtn = document.querySelector(".register-btn");
+const btnCloseRegister = document.querySelector(".close-register");
+const btnCloseLogin = document.querySelector(".close-login");
 
 const client = {
   firstName: [],
@@ -48,7 +55,6 @@ export const regsiterFunctionallity = function () {
   } else {
     alert("too short");
   }
-  console.log(client);
 };
 export const success = function () {
   if (
@@ -81,4 +87,27 @@ export const loginOldAccount = function () {
 };
 export const loginOldAccountExpo = function () {
   btnLoginOldAcc.addEventListener("click", loginOldAccount);
+};
+const inputFORMSclass = document.querySelector(".show-form-cell");
+
+export const showRegisterAndLoginForms = function (hero) {
+  loginBtn.addEventListener("click", function () {
+    loginCell.classList.remove("hidden");
+    hero.classList.add("hidden");
+    inputFORMSclass.innerHTML = `  
+    <button class="btn close-login">
+              <ion-icon
+                class="form-icon"
+                name="chevron-back-outline"
+              ></ion-icon>
+            </button>
+            <p class="sec-dis">LOGIN</p>
+    `;
+  });
+
+  regsiterBtn.addEventListener("click", function () {
+    console.log("clicked");
+    regsiterCell.classList.remove("hidden");
+    hero.classList.add("hidden");
+  });
 };

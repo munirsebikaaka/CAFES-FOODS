@@ -65,50 +65,63 @@ export const showRewardsCell = function (btnRe, secNa, herSec) {
 export const showOrderCell = function (btnOr, secNa, herSec) {
   btnOr.addEventListener("click", function () {
     secNa.textContent = "ORDERS";
+
     herSec.innerHTML = `
-        
-        <div class="orders-in">
-                <div class="inside-order">
-                  <div class="big-on-breakfast">
-                    <img
-                      class="big-img"
-                      src="bigBrakeFAST/breakFastCombo/combo8.jpg"
-                      alt=""
-                    />
-                    <p class="order-name">namesssss</p>
-                  </div>
-                  <div class="big-on-breakfast">
-                    <img
-                      class="big-img"
-                      src="bigBrakeFAST/breakFastCombo/combo6.jpg"
-                      alt=""
-                    />
-                    <p class="order-name">namesssss</p>
-                  </div>
-                </div>
-                <div class="inside-order">
-                  <div class="big-on-breakfast">
-                    <img
-                      class="big-img"
-                      src="bigBrakeFAST/breakFastCombo/combo5.jpg"
-                      alt=""
-                    />
-                    <p class="order-name">namesssss</p>
-                  </div>
-                  <div class="big-on-breakfast">
-                    <img
-                      class="big-img"
-                      src="bigBrakeFAST/cappuccino-1869731_1280.jpg"
-                      alt=""
-                    />
-                    <p class="order-name">namesssss</p>
-                  </div>
-                </div>
-              </div>
-        
-        `;
+    
+    <div class="orders-in">
+          <div class="inside-order">
+            <div id="breakfastID" class="big-on-breakfast">
+              <img
+                class="big-img breakfast"                 
+                src="bigBrakeFAST/breakFastCombo/combo8.jpg"
+                alt=""
+              />
+              <p class="order-name">BREAKFIST</p>
+
+            </div>
+            <div class="big-on-breakfast">
+
+              <img
+                class="big-img breakfast2"
+                src="bigBrakeFAST/breakFastCombo/combo6.jpg"
+                alt=""
+              />
+              <p class="order-name">namesssss</p>
+            </div>
+          </div>
+          <div class="inside-order">
+            <div class="big-on-breakfast">
+              <img
+                class="big-img breakfast3"
+                src="bigBrakeFAST/breakFastCombo/combo5.jpg"
+                alt=""
+              />
+              <p class="order-name">namesssss</p>
+            </div>
+            <div class="big-on-breakfast">
+              <img
+                class="big-img breakfast4"
+                src="bigBrakeFAST/cappuccino-1869731_1280.jpg"
+                alt=""
+              />
+              <p class="order-name">namesssss</p>
+            </div>
+          </div>
+        </div>
+    
+    `;
   });
 };
+
+const orderCell = document.querySelector(".breakfast");
+const orderCell1 = document.querySelector(".breakfast2");
+const orderCell2 = document.querySelector(".breakfast3");
+const orderCell3 = document.querySelector(".breakfast4");
+
+const breakFast = document.querySelector(".big-on-breakfasts");
+const bigMeal = document.querySelector(".generous-big-meal");
+const perfectDrinks = document.querySelector(".pefected-drinks");
+const deserts = document.querySelector(".dedicant-deserts");
 
 export const showMenu = function (btnM, secNa, herSec) {
   btnM.addEventListener("click", function () {
