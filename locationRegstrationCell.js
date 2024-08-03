@@ -10,12 +10,15 @@ const accEmail = document.querySelector(".login-email");
 const accPassword = document.querySelector(".login-password");
 const regsiterCell = document.querySelector(".resgister");
 const loginCell = document.querySelector(".login");
+const heroSection = document.querySelector(".hero");
 
 const btnLoginOldAcc = document.querySelector(".login-old-acc");
 const loginBtn = document.querySelector(".login-btn");
 const regsiterBtn = document.querySelector(".register-btn");
-const btnCloseRegister = document.querySelector(".close-register");
-const btnCloseLogin = document.querySelector(".close-login");
+const btnCloseRegister = document.querySelector(".back-btn");
+const btnCloseLogin = document.querySelector(".back-btn-LOGIN");
+
+// console.log(loginBtn, regsiterBtn);
 
 const client = {
   firstName: [],
@@ -88,26 +91,77 @@ export const loginOldAccount = function () {
 export const loginOldAccountExpo = function () {
   btnLoginOldAcc.addEventListener("click", loginOldAccount);
 };
-const inputFORMSclass = document.querySelector(".show-form-cell");
 
-export const showRegisterAndLoginForms = function (hero) {
-  loginBtn.addEventListener("click", function () {
-    loginCell.classList.remove("hidden");
-    hero.classList.add("hidden");
-    inputFORMSclass.innerHTML = `  
-    <button class="btn close-login">
-              <ion-icon
-                class="form-icon"
-                name="chevron-back-outline"
-              ></ion-icon>
-            </button>
-            <p class="sec-dis">LOGIN</p>
-    `;
-  });
+regsiterCell.style.display = "none";
+loginCell.style.display = "none";
+const showFormBtn = document.querySelector(".show-form");
+const sectionName = document.querySelector(".sec-name");
 
-  regsiterBtn.addEventListener("click", function () {
-    console.log("clicked");
-    regsiterCell.classList.remove("hidden");
-    hero.classList.add("hidden");
-  });
+const openLoginAndRegisterCells = function (
+  cellToChangeDisplay,
+  addClassCell,
+  btnAndClass,
+  btnRemoveClass,
+  secSetCnt
+) {
+  cellToChangeDisplay.style.display = "block";
+  addClassCell.classList.add("hidden");
+  btnAndClass.classList.remove("hidden");
+  btnRemoveClass.classList.add("hidden");
+  secSetCnt.textContent = "LOGIN";
 };
+
+regsiterBtn.addEventListener("click", function () {
+  openLoginAndRegisterCells(
+    regsiterCell,
+    heroSection,
+    btnCloseRegister,
+    showFormBtn,
+    sectionName
+  );
+});
+
+loginBtn.addEventListener("click", function () {
+  openLoginAndRegisterCells(
+    loginCell,
+    heroSection,
+    btnCloseLogin,
+    showFormBtn,
+    sectionName
+  );
+});
+
+const closeLoginAndRegisterCells = function (
+  addDisplay,
+  removeClass,
+  addClassBtn,
+  removeClassBtn,
+  secNaCnt
+) {
+  addDisplay.style.display = "none";
+  removeClass.classList.remove("hidden");
+  addClassBtn.classList.add("hidden");
+  removeClassBtn.classList.remove("hidden");
+  secNaCnt.textContent = "HOME";
+};
+
+btnCloseLogin.addEventListener("click", function () {
+  closeLoginAndRegisterCells(
+    loginCell,
+    heroSection,
+    btnCloseLogin,
+    showFormBtn,
+    sectionName
+  );
+});
+/////////////////////////////////////////////
+
+btnCloseRegister.addEventListener("click", function () {
+  closeLoginAndRegisterCells(
+    regsiterCell,
+    heroSection,
+    btnCloseRegister,
+    showFormBtn,
+    sectionName
+  );
+});

@@ -31,8 +31,6 @@ closeForm(applicationForm, btnCloseForm);
 import {
   showComfirmationMsg,
   loginOldAccountExpo,
-  showRegisterAndLoginForms,
 } from "./locationRegstrationCell.js";
 showComfirmationMsg();
 loginOldAccountExpo();
-showRegisterAndLoginForms(heroSection);
