@@ -1,6 +1,15 @@
+const openCell1 = document.querySelector(".btn1");
+const openCell2 = document.querySelector(".btn2");
+const openCell3 = document.querySelector(".btn3");
+const openCell4 = document.querySelector(".btn4");
+const allBtn = [openCell1, openCell2, openCell3, openCell4];
+
 export const showRewardsCell = function (btnRe, secNa, herSec) {
   btnRe.addEventListener("click", function () {
     secNa.textContent = "REWARDS";
+    allBtn.forEach((btn) => {
+      btn.style.display = "none";
+    });
     herSec.innerHTML = `
         
         
@@ -65,10 +74,13 @@ export const showRewardsCell = function (btnRe, secNa, herSec) {
 export const showOrderCell = function (btnOr, secNa, herSec) {
   btnOr.addEventListener("click", function () {
     secNa.textContent = "ORDERS";
+    allBtn.forEach((btn) => {
+      btn.style.display = "block";
+    });
 
     herSec.innerHTML = `
-    
-    <div class="orders-in">
+      <h1 class="orders-head">Welcome to CJ's!!</h1>
+       <div class="orders-in">
           <div class="inside-order">
             <div id="breakfastID" class="big-on-breakfast">
               <img
@@ -113,19 +125,12 @@ export const showOrderCell = function (btnOr, secNa, herSec) {
   });
 };
 
-const orderCell = document.querySelector(".breakfast");
-const orderCell1 = document.querySelector(".breakfast2");
-const orderCell2 = document.querySelector(".breakfast3");
-const orderCell3 = document.querySelector(".breakfast4");
-
-const breakFast = document.querySelector(".big-on-breakfasts");
-const bigMeal = document.querySelector(".generous-big-meal");
-const perfectDrinks = document.querySelector(".pefected-drinks");
-const deserts = document.querySelector(".dedicant-deserts");
-
 export const showMenu = function (btnM, secNa, herSec) {
   btnM.addEventListener("click", function () {
     secNa.textContent = "HOME";
+    allBtn.forEach((btn) => {
+      btn.style.display = "none";
+    });
     herSec.innerHTML = `
         
         <section class="hero">
@@ -166,6 +171,9 @@ export const showMenu = function (btnM, secNa, herSec) {
 export const showMore = function (btnMore, secNa, herSec) {
   btnMore.addEventListener("click", function () {
     secNa.textContent = "MORE";
+    allBtn.forEach((btn) => {
+      btn.style.display = "none";
+    });
     herSec.innerHTML = `
            
         <ul class="footer-links-cell">

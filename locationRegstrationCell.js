@@ -1,9 +1,9 @@
-const firstNames = document.querySelector(".first-name");
-const lastNames = document.querySelector(".last-name");
-const dateOfBirths = document.querySelector(".dates");
-const emails = document.querySelector(".emails");
-const passwords = document.querySelector(".password");
-const comfirmPasswords = document.querySelector(".comfirm");
+let firstNames = document.querySelector(".first-name");
+let lastNames = document.querySelector(".last-name");
+let dateOfBirths = document.querySelector(".dates");
+let emails = document.querySelector(".emails");
+let passwords = document.querySelector(".password");
+let comfirmPasswords = document.querySelector(".comfirm");
 const welcomeMsg = document.querySelector(".welcome");
 const comfirmBTN = document.querySelector(".comfirm-btn");
 const accEmail = document.querySelector(".login-email");
@@ -11,6 +11,9 @@ const accPassword = document.querySelector(".login-password");
 const regsiterCell = document.querySelector(".resgister");
 const loginCell = document.querySelector(".login");
 const heroSection = document.querySelector(".hero");
+const showFormBtn = document.querySelector(".show-form");
+const sectionName = document.querySelector(".sec-name");
+const welcomeBackMsg = document.querySelector(".welcome-back");
 
 const btnLoginOldAcc = document.querySelector(".login-old-acc");
 const loginBtn = document.querySelector(".login-btn");
@@ -18,7 +21,8 @@ const regsiterBtn = document.querySelector(".register-btn");
 const btnCloseRegister = document.querySelector(".back-btn");
 const btnCloseLogin = document.querySelector(".back-btn-LOGIN");
 
-// console.log(loginBtn, regsiterBtn);
+regsiterCell.style.display = "none";
+loginCell.style.display = "none";
 
 const client = {
   firstName: [],
@@ -27,75 +31,6 @@ const client = {
   email: [],
   password: [],
 };
-
-export const regsiterFunctionallity = function () {
-  if (firstNames.value) {
-    client.firstName.push(firstNames.value);
-  } else {
-    alert("Please input first name!");
-  }
-  if (lastNames.value) {
-    client.lastName.push(lastNames.value);
-  } else {
-    alert("please input last name!");
-  }
-  if (dateOfBirths.value) {
-    client.dateOfBirth.push(dateOfBirths.value);
-  } else {
-    alert("please input date of birth!");
-  }
-  if (emails.value) {
-    client.email.push(emails.value);
-  } else {
-    alert("Please input your email address!");
-  }
-  if (passwords.value.length > 3) {
-    if (passwords.value && passwords.value === comfirmPasswords.value) {
-      client.password.push(passwords.value);
-    } else {
-      alert("Please input password!");
-    }
-  } else {
-    alert("too short");
-  }
-};
-export const success = function () {
-  if (
-    firstNames.value &&
-    lastNames.value &&
-    dateOfBirths.value &&
-    emails.value &&
-    passwords.value &&
-    passwords.value === comfirmPasswords.value
-  ) {
-    welcomeMsg.textContent = `welcome mr ${firstNames.value}`;
-  }
-};
-export const showComfirmationMsg = function () {
-  comfirmBTN.addEventListener("click", () => {
-    regsiterFunctionallity();
-    success();
-  });
-};
-export const loginOldAccount = function () {
-  const oldEmail = client.email;
-  const oldPassword = client.password;
-  oldEmail.forEach((em, i) => {
-    if (accEmail.value === em && oldPassword[i] === accPassword.value) {
-      alert("CORECT!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-    } else {
-      alert("unknown inputs");
-    }
-  });
-};
-export const loginOldAccountExpo = function () {
-  btnLoginOldAcc.addEventListener("click", loginOldAccount);
-};
-
-regsiterCell.style.display = "none";
-loginCell.style.display = "none";
-const showFormBtn = document.querySelector(".show-form");
-const sectionName = document.querySelector(".sec-name");
 
 const openLoginAndRegisterCells = function (
   cellToChangeDisplay,
@@ -110,27 +45,6 @@ const openLoginAndRegisterCells = function (
   btnRemoveClass.classList.add("hidden");
   secSetCnt.textContent = "LOGIN";
 };
-
-regsiterBtn.addEventListener("click", function () {
-  openLoginAndRegisterCells(
-    regsiterCell,
-    heroSection,
-    btnCloseRegister,
-    showFormBtn,
-    sectionName
-  );
-});
-
-loginBtn.addEventListener("click", function () {
-  openLoginAndRegisterCells(
-    loginCell,
-    heroSection,
-    btnCloseLogin,
-    showFormBtn,
-    sectionName
-  );
-});
-
 const closeLoginAndRegisterCells = function (
   addDisplay,
   removeClass,
@@ -145,23 +59,114 @@ const closeLoginAndRegisterCells = function (
   secNaCnt.textContent = "HOME";
 };
 
-btnCloseLogin.addEventListener("click", function () {
-  closeLoginAndRegisterCells(
-    loginCell,
-    heroSection,
-    btnCloseLogin,
-    showFormBtn,
-    sectionName
-  );
-});
-/////////////////////////////////////////////
+export const showAndHideLoginAndRegisterFunctionallity = function () {
+  regsiterBtn.addEventListener("click", function () {
+    openLoginAndRegisterCells(
+      regsiterCell,
+      heroSection,
+      btnCloseRegister,
+      showFormBtn,
+      sectionName
+    );
+  });
 
-btnCloseRegister.addEventListener("click", function () {
-  closeLoginAndRegisterCells(
-    regsiterCell,
-    heroSection,
-    btnCloseRegister,
-    showFormBtn,
-    sectionName
-  );
-});
+  loginBtn.addEventListener("click", function () {
+    openLoginAndRegisterCells(
+      loginCell,
+      heroSection,
+      btnCloseLogin,
+      showFormBtn,
+      sectionName
+    );
+  });
+
+  btnCloseLogin.addEventListener("click", function () {
+    closeLoginAndRegisterCells(
+      loginCell,
+      heroSection,
+      btnCloseLogin,
+      showFormBtn,
+      sectionName
+    );
+  });
+
+  btnCloseRegister.addEventListener("click", function () {
+    closeLoginAndRegisterCells(
+      regsiterCell,
+      heroSection,
+      btnCloseRegister,
+      showFormBtn,
+      sectionName
+    );
+  });
+};
+
+export const regsiterFunctionallity = function () {
+  if (firstNames.value) {
+    client.firstName.push(firstNames.value);
+  } else {
+    alert("Please input first name!");
+  }
+  if (lastNames.value) {
+    client.lastName.push(lastNames.value);
+  } else {
+    alert("Please input last name!");
+  }
+  if (dateOfBirths.value) {
+    client.dateOfBirth.push(dateOfBirths.value);
+  } else {
+    alert("Please input date of birth!");
+  }
+  if (emails.value) {
+    client.email.push(emails.value);
+  } else {
+    alert("Please input your email address!");
+  }
+  if (passwords.value && passwords.value === comfirmPasswords.value) {
+    client.password.push(passwords.value);
+  } else {
+    alert("Please input password!");
+  }
+};
+export const success = function () {
+  if (
+    firstNames.value &&
+    lastNames.value &&
+    dateOfBirths.value &&
+    emails.value &&
+    passwords.value &&
+    passwords.value === comfirmPasswords.value
+  ) {
+    welcomeMsg.textContent = `Hello and welcome Mr/Mrs ${firstNames.value},this is the cafe javas please get ready to test our fantastic products.`;
+  }
+};
+export const loginOldAccount = function () {
+  const oldEmail = client.email;
+  const oldPassword = client.password;
+  oldEmail.forEach((em, i) => {
+    if (accEmail.value === em && oldPassword[i] === accPassword.value) {
+      client.firstName.forEach((nam) => {
+        welcomeBackMsg.textContent = `Welcome back Mr/Mrs ${nam} choose any type of product you want`;
+      });
+    } else {
+      alert("unknown inputs");
+    }
+  });
+};
+
+export const loginOldAccountExpo = function () {
+  btnLoginOldAcc.addEventListener("click", loginOldAccount);
+};
+
+export const showComfirmationMsg = function () {
+  comfirmBTN.addEventListener("click", () => {
+    regsiterFunctionallity();
+    success();
+    firstNames.value = "";
+    lastNames.value = "";
+    dateOfBirths.value = "";
+    emails.value = "";
+    passwords.value = "";
+    comfirmPasswords.value = "";
+  });
+};
