@@ -79,7 +79,6 @@ export const showOrderCell = function (btnOr, secNa, herSec) {
     });
 
     herSec.innerHTML = `
-      <h1 class="orders-head">Welcome to CJ's!!</h1>
        <div class="orders-in">
           <div class="inside-order">
             <div id="breakfastID" class="big-on-breakfast">

@@ -298,7 +298,7 @@ body {
 }
 .btn1 {
   position: absolute;
-  bottom: -3%;
+  bottom: 17%;
   left: 18%;
   display: inline-block;
   font-size: 20px;
@@ -307,7 +307,7 @@ body {
 
 .btn2 {
   position: absolute;
-  bottom: -4%;
+  bottom: 16%;
   left: 65%;
   display: inline-block;
   font-size: 20px;
@@ -315,7 +315,7 @@ body {
 }
 .btn3 {
   position: absolute;
-  bottom: -79%;
+  bottom: -59.3%;
   left: 20%;
   display: inline-block;
   font-size: 20px;
@@ -323,10 +323,13 @@ body {
 }
 .btn4 {
   position: absolute;
-  bottom: -79.8%;
+  bottom: -60%;
   left: 65%;
   display: inline-block;
   font-size: 20px;
+  background-color: var(--primary-color);
+}
+.back {
   background-color: var(--primary-color);
 }
 

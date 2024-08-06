@@ -37,13 +37,14 @@ const openLoginAndRegisterCells = function (
   addClassCell,
   btnAndClass,
   btnRemoveClass,
-  secSetCnt
+  secSetCnt,
+  content
 ) {
   cellToChangeDisplay.style.display = "block";
   addClassCell.classList.add("hidden");
   btnAndClass.classList.remove("hidden");
   btnRemoveClass.classList.add("hidden");
-  secSetCnt.textContent = "LOGIN";
+  secSetCnt.textContent = content;
 };
 const closeLoginAndRegisterCells = function (
   addDisplay,
@@ -66,7 +67,8 @@ export const showAndHideLoginAndRegisterFunctionallity = function () {
       heroSection,
       btnCloseRegister,
       showFormBtn,
-      sectionName
+      sectionName,
+      "REGISTERS"
     );
   });
 
@@ -76,7 +78,8 @@ export const showAndHideLoginAndRegisterFunctionallity = function () {
       heroSection,
       btnCloseLogin,
       showFormBtn,
-      sectionName
+      sectionName,
+      "LOGIN"
     );
   });
 
