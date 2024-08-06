@@ -15,10 +15,7 @@ body {
   --primary-color: #008d5e;
   --vavy-blue: #080075;
 }
-/* .head-of-application, */
-/* .app-links-cell, */
-/* .application-link,  */
-/* .app-logo, */
+
 .hero-content-cell {
   display: flex;
 }
@@ -37,7 +34,6 @@ body {
   top: 0;
   z-index: 100;
   flex-direction: column;
-  /* position: relative; */
 }
 .link-icon {
   width: 1.5rem;

@@ -15,7 +15,6 @@ const heroSection = document.querySelector(".hero");
 const allBtn = [openCell1, openCell2, openCell3, openCell4];
 allBtn.forEach((btn) => (btn.style.display = "none"));
 orderBackBtn.forEach((el) => (el.style.display = "none"));
-// allBtn.forEach((btn) => console.log(btn.textContent));
 
 function runInnerOrder(show, price, section, backBtn, name) {
   price.classList.remove("hidden");
@@ -23,9 +22,6 @@ function runInnerOrder(show, price, section, backBtn, name) {
   backBtn.style.display = "block";
   show.classList.add("hidden");
   sectionName.textContent = name;
-  //   allBtns.forEach((btn) => {
-  //     btn.style.backgroundColor = "red";
-  //   });
   allBtn.forEach((btn) => (btn.style.display = "none"));
 }
 
@@ -59,7 +55,6 @@ export const openCloseCell1 = function () {
       heroSection,
       orderBackBtn[0],
       "BIG ON BREAKFAST"
-      //   allBtn
     )
   );
 };
@@ -71,7 +66,6 @@ export const openCloseCell2 = function () {
       heroSection,
       orderBackBtn[1],
       "GENEROUS BIG MEAL"
-      //   allBtn
     )
   );
   orderBackBtn[1].addEventListener("click", () =>
@@ -93,7 +87,6 @@ export const openCloseCell3 = function () {
       heroSection,
       orderBackBtn[2],
       "PERFECTED DRINKS"
-      //   allBtn
     )
   );
   orderBackBtn[2].addEventListener("click", () =>
@@ -115,7 +108,6 @@ export const openCloseCell4 = function () {
       heroSection,
       orderBackBtn[3],
       "DEDICANT DESERTS"
-      //   allBtn
     )
   );
 
