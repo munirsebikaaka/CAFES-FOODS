@@ -5,6 +5,15 @@
 }
 body {
   font-family: sans-serif;
+  position: relative;
+}
+.overly {
+  position: absolute;
+  background-color: #0000008c;
+  height: 170vh;
+  top: -30%;
+  width: 100%;
+  z-index: 50;
 }
 /* COMBINED APPLICATION STYLES */
 :root {
@@ -32,7 +41,7 @@ body {
   width: 100%;
   height: 100px;
   top: 0;
-  z-index: 100;
+  z-index: 50;
   flex-direction: column;
 }
 .link-icon {
@@ -75,12 +84,14 @@ body {
 }
 .application-nav {
   width: 18rem;
-  position: absolute;
+  position: fixed;
   top: 0%;
   left: 0%;
   background-color: var(--white-color);
   transition: transform 1s;
   padding-left: 40px;
+  z-index: 60;
+  height: 100vh;
 }
 .hidden2 {
   transform: translateX(-18rem);

@@ -19,6 +19,7 @@ import {
   showMore,
   showForm,
   closeForm,
+  useOverly,
 } from "./mainBody.js";
 showRewardsCell(rewardsBtn, sectionName, heroSection);
 showOrderCell(orderBtn, sectionName, heroSection);
@@ -26,6 +27,7 @@ showMenu(menuBtn, sectionName, heroSection);
 showMore(moreBtn, sectionName, heroSection);
 showForm(showFormBtn, applicationForm);
 closeForm(applicationForm, btnCloseForm);
+useOverly(applicationForm);
 
 //REGSTER AND LOGIN FUNCTIONALLITY OF THE APPLICATION
 import {

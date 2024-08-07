@@ -2,6 +2,7 @@ const openCell1 = document.querySelector(".btn1");
 const openCell2 = document.querySelector(".btn2");
 const openCell3 = document.querySelector(".btn3");
 const openCell4 = document.querySelector(".btn4");
+const overly = document.querySelector(".overly");
 const allBtn = [openCell1, openCell2, openCell3, openCell4];
 
 export const showRewardsCell = function (btnRe, secNa, herSec) {
@@ -203,12 +204,20 @@ export const showMore = function (btnMore, secNa, herSec) {
   });
 };
 
-export const showForm = function (showBtn, appForm) {
-  showBtn.addEventListener("click", () => {
-    appForm.classList.remove("hidden2");
-  });
+function addClass(appForm) {
+  appForm.classList.remove("hidden2");
+  overly.classList.remove("hidden");
+}
+const removeClass = (appForm) => {
+  appForm.classList.add("hidden2");
+  overly.classList.add("hidden");
 };
-
+export const showForm = function (showBtn, appForm) {
+  showBtn.addEventListener("click", () => addClass(appForm));
+};
 export const closeForm = function (appForm, close) {
-  close.addEventListener("click", () => appForm.classList.add("hidden2"));
+  close.addEventListener("click", () => removeClass(appForm));
+};
+export const useOverly = function (appForm) {
+  overly.addEventListener("click", () => removeClass(appForm));
 };
