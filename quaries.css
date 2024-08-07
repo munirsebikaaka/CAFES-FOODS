@@ -1,3 +1,35 @@
+@media (max-width: 830px) {
+  .btn1 {
+    bottom: 55.4%;
+    left: 25%;
+  }
+
+  .btn2 {
+    bottom: 55%;
+    left: 73%;
+  }
+  .btn3 {
+    bottom: 1.5%;
+    left: 25%;
+  }
+  .btn4 {
+    bottom: 1%;
+    left: 70%;
+  }
+  .about-reward {
+    width: 35rem;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .reward {
+    width: 35rem;
+    margin: 0 auto;
+  }
+  .rewards-movement {
+    width: 35rem;
+  }
+}
+
 @media (max-width: 600px) {
   .hero-section {
     height: 45vh;
@@ -28,5 +60,32 @@
   }
   .big-img {
     height: auto;
+  }
+  .about-reward {
+    width: 26rem;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .reward {
+    width: 26rem;
+    margin: 0 auto;
+  }
+  .rewards-movement {
+    width: 26rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .about-reward {
+    width: 20rem;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .reward {
+    width: 20rem;
+    margin: 0 auto;
+  }
+  .rewards-movement {
+    width: 20rem;
   }
 }
