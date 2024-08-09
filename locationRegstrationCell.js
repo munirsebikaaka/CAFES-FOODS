@@ -30,6 +30,7 @@ geolocationBtn.addEventListener("click", function () {
   heroSection.classList.add("hidden");
   map.classList.remove("hidden");
 });
+
 export const currentPositionOnMap = function () {
   navigator.geolocation.getCurrentPosition(
     function (position) {
@@ -42,11 +43,26 @@ export const currentPositionOnMap = function () {
         attribution:
           '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
       }).addTo(map);
-
-      L.marker(posCoords)
-        .addTo(map)
-        .bindPopup("A pretty CSS popup.<br> Easily customizable.")
-        .openPopup();
+      const kawempe = [0.37288879372160305, 32.55798339843751];
+      const gayaza = [0.4488255373975061, 32.61016845703126];
+      const kampala = [0.3112741893818594, 32.58682250976563];
+      const kyambogo = [0.3552777649635313, 32.625961303710945];
+      const gaba = [0.25949210624339925, 32.628707885742195];
+      const ntinda = [0.35647937142302477, 32.44314193725587];
+      const makerere = [0.33691033280328014, 32.56416320800782];
+      const nansana = [0.36403232269975694, 32.52622604370118];
+      const mutundwe = [0.2819794954305079, 32.53137588500977];
+      const kira = [0.34652319893266076, 32.59592056274415];
+      L.marker(kawempe).addTo(map).openPopup();
+      L.marker(gayaza).addTo(map).openPopup();
+      L.marker(kampala).addTo(map).openPopup();
+      L.marker(kyambogo).addTo(map).openPopup();
+      L.marker(gaba).addTo(map).openPopup();
+      L.marker(ntinda).addTo(map).openPopup();
+      L.marker(makerere).addTo(map).openPopup();
+      L.marker(nansana).addTo(map).openPopup();
+      L.marker(mutundwe).addTo(map).openPopup();
+      L.marker(kira).addTo(map).openPopup();
     },
     function () {
       alert("Failed to access your position!!!!");

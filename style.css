@@ -280,6 +280,7 @@ body {
   text-transform: uppercase;
   padding: 5px 10px;
   margin-left: 3px;
+  background-color: var(--primary-color);
 
   border: none;
   border-radius: 11px;
@@ -534,6 +535,7 @@ body {
   font-size: 1.2rem;
   letter-spacing: 1.2px;
   line-height: 1.4;
+  margin-bottom: 20px;
 }
 .login-inputs-only {
   display: flex;
@@ -544,14 +546,20 @@ body {
 }
 .add-icon-look {
   width: 100%;
-  /* display: flex;
-  align-items: center; */
-  margin-top: 20pxF;
+
+  /* margin-top: 20px; */
 }
 
-.login-icon2 {
-  margin-bottom: -10px;
+.login-icon {
+  width: 20px;
+  height: 20px;
 }
+
 #map {
   height: 800px;
+}
+.login-icon-cell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
