@@ -166,7 +166,7 @@
                 src="bigBrakeFAST/breakFastCombo/combo8.jpg"
                 alt=""
               />
-              <p class="order-name">BREAKFIST</p>
+              <p class="order-name">BIG ON BREAKFIST</p>
             </div>
             <div class="big-on-breakfast">
               <img
@@ -298,25 +298,26 @@
         <div class="login">
           <p class="welcome-back"></p>
           <p class="login-description">
-            commited to great food, great coffee, great service and an awesome
+            Commited to great food, great coffee, great service and an awesome
             experiance that will make you long more! Welcome aboard.
           </p>
-          <input
-            type="email"
-            class="login-input login-email"
-            placeholder="email"
-          />
-          <input
-            type="text"
-            class="login-input login-password"
-            placeholder="password"
-          />
+          <div class="login-inputs-only">
+            <div class="add-icon-look">
+              <ion-icon class="login-icon" name="mail-outline"></ion-icon>
+              <label for="">EMAIL</label>
+              <input type="email" class="login-input login-email" />
+            </div>
+            <div class="add-icon-look">
+              <ion-icon
+                class="login-icon login-icon2"
+                name="lock-open-outline"
+              ></ion-icon>
+              <label for="">PASSWORD</label>
+              <input type="text" class="login-input login-password" />
+            </div>
 
-          <button class="btn">forgot password?</button>
-          <button class="btn login-old-acc">login</button>
-          <div>
-            <p>icon</p>
-            <p>icon</p>
+            <button class="btn forgot">forgot password?</button>
+            <button class="btn login-old-acc">login</button>
           </div>
         </div>
       </section>
@@ -759,7 +760,7 @@
       </ul>
     </footer>
 
-    <div id="map"></div>
+    <div id="map" class="hidden"></div>
     <p class="overly hidden"></p>
 
     <script

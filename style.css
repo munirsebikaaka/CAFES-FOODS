@@ -296,6 +296,10 @@ body {
   align-items: center;
   gap: 50px;
 }
+.order-name {
+  margin-left: 10px;
+  margin-top: 5px;
+}
 .hidden {
   display: none;
 }
@@ -494,6 +498,9 @@ body {
   color: var(--main-color);
   text-transform: uppercase;
 }
+.login-old-acc {
+  width: 50%;
+}
 .old-acount {
   font-size: 1.2rem;
 }
@@ -515,6 +522,36 @@ body {
 .back-reg-log {
   background-color: var(--primary-color);
 }
+.forgot {
+  background-color: inherit;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
 .login {
-  margin-top: 100px;
+  margin: 150px auto;
+}
+.login-description {
+  font-size: 1.2rem;
+  letter-spacing: 1.2px;
+  line-height: 1.4;
+}
+.login-inputs-only {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 90%;
+}
+.add-icon-look {
+  width: 100%;
+  /* display: flex;
+  align-items: center; */
+  margin-top: 20pxF;
+}
+
+.login-icon2 {
+  margin-bottom: -10px;
+}
+#map {
+  height: 800px;
 }

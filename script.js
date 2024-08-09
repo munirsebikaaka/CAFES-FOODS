@@ -29,15 +29,17 @@ showForm(showFormBtn, applicationForm);
 closeForm(applicationForm, btnCloseForm);
 useOverly(applicationForm);
 
-//REGSTER AND LOGIN FUNCTIONALLITY OF THE APPLICATION
+//REGSTER, LOGIN AND SHOW OUR POSITION ON MAP FUNCTIONALLITY OF THE APPLICATION
 import {
   showComfirmationMsg,
   loginOldAccountExpo,
   showAndHideLoginAndRegisterFunctionallity,
+  currentPositionOnMap,
 } from "./locationRegstrationCell.js";
 showComfirmationMsg();
 loginOldAccountExpo();
 showAndHideLoginAndRegisterFunctionallity();
+currentPositionOnMap();
 
 //SHOW AND HIDE ORDER PRODUCTS FUNCTIONALLITY OF THE APPLICATION
 import {

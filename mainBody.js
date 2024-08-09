@@ -98,7 +98,7 @@ export const showOrderCell = function (btnOr, secNa, herSec) {
                 src="bigBrakeFAST/breakFastCombo/combo6.jpg"
                 alt=""
               />
-              <p class="order-name">namesssss</p>
+              <p class="order-name">MEALS</p>
             </div>
           </div>
           <div class="inside-order">
@@ -108,7 +108,7 @@ export const showOrderCell = function (btnOr, secNa, herSec) {
                 src="bigBrakeFAST/breakFastCombo/combo5.jpg"
                 alt=""
               />
-              <p class="order-name">namesssss</p>
+              <p class="order-name">DESERTS</p>
             </div>
             <div class="big-on-breakfast">
               <img
@@ -116,7 +116,7 @@ export const showOrderCell = function (btnOr, secNa, herSec) {
                 src="bigBrakeFAST/cappuccino-1869731_1280.jpg"
                 alt=""
               />
-              <p class="order-name">namesssss</p>
+              <p class="order-name">DRINKS</p>
             </div>
           </div>
         </div>

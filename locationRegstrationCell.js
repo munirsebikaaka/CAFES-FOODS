@@ -20,10 +20,39 @@ const loginBtn = document.querySelector(".login-btn");
 const regsiterBtn = document.querySelector(".register-btn");
 const btnCloseRegister = document.querySelector(".back-btn");
 const btnCloseLogin = document.querySelector(".back-btn-LOGIN");
+const geolocationBtn = document.querySelector(".geolocation-btn");
+const map = document.getElementById("map");
 
 regsiterCell.style.display = "none";
 loginCell.style.display = "none";
 
+geolocationBtn.addEventListener("click", function () {
+  heroSection.classList.add("hidden");
+  map.classList.remove("hidden");
+});
+export const currentPositionOnMap = function () {
+  navigator.geolocation.getCurrentPosition(
+    function (position) {
+      const { latitude: lat, longitude: lng } = position.coords;
+      const posCoords = [lat, lng];
+      console.log(posCoords);
+      const map = L.map("map").setView(posCoords, 13);
+
+      L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution:
+          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      }).addTo(map);
+
+      L.marker(posCoords)
+        .addTo(map)
+        .bindPopup("A pretty CSS popup.<br> Easily customizable.")
+        .openPopup();
+    },
+    function () {
+      alert("Failed to access your position!!!!");
+    }
+  );
+};
 const client = {
   firstName: [],
   lastName: [],
