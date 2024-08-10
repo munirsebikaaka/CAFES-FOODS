@@ -33,6 +33,8 @@ body {
 
 .app-links-cell {
   gap: 20px;
+  display: flex;
+  flex-direction: column;
 }
 .head-of-application {
   padding: 8px;
@@ -83,7 +85,7 @@ body {
   margin: 30px 10px;
 }
 .application-nav {
-  width: 18rem;
+  width: 24rem;
   position: fixed;
   top: 0%;
   left: 0%;
@@ -94,13 +96,18 @@ body {
   height: 100vh;
 }
 .hidden2 {
-  transform: translateX(-18rem);
+  transform: translateX(-24rem);
 }
 .application-link {
   display: flex;
   align-items: center;
   gap: 10px;
   margin-bottom: 15px;
+}
+.border {
+  border-bottom: 1px solid #00000067;
+  width: 90%;
+  padding-bottom: 10px;
 }
 
 .form-icon {

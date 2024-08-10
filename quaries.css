@@ -44,6 +44,7 @@
   }
   .geolocation-btn {
     font-size: 1.1rem;
+    width: 300px;
   }
   .login-btn,
   .register-btn {
@@ -96,6 +97,14 @@
     left: 75%;
   }
   .img-name {
+    font-size: 0.8rem;
+  }
+  .show-form-cell {
+    width: 70%;
+  }
+  .range {
+    width: 200px;
+    padding: 1px;
     font-size: 0.8rem;
   }
 }
