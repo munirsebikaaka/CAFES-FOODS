@@ -161,6 +161,9 @@ body {
   border-radius: 11px;
   font-weight: 600;
 }
+.hero-icon {
+  padding-right: 10px;
+}
 .hero-discription {
   display: flex;
   flex-direction: column;
@@ -227,6 +230,9 @@ body {
   justify-content: space-between;
   gap: 10px;
   margin-bottom: 20px;
+}
+.controls {
+  background-color: inherit;
 }
 .control-btn-icons {
   width: 3rem;
@@ -496,6 +502,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  margin-top: 10px;
 }
 .comfirm-btn,
 .login-old-acc {
